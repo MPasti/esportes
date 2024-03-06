@@ -1,3 +1,4 @@
+//é preciso baixar uma lib adicional para o express com TS, pois o ts não é nativo nele
 import express from "express";
 
 const app = express();
