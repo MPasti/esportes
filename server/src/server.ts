@@ -3,16 +3,32 @@ import express from "express";
 
 const app = express();
 
+app.get("/games", (req, res) => {
+  return res.json([]);
+});
+//post é criar, não precisamos verbalizar, fazemos apenas uma rota no plural
+app.post("/ads", (req, res) => {
+  return res.status(201).json(["teste"]);
+});
+
 //metodo get, o primeiro parametro é o endereço que o usuário vai estar acessando
 //o url que vem depois da barra, o PATH
 //como segundo parametro passamos o que será executado, normalmente uma função
 //nessa função tem 2 parametros
-app.get("/ads", (req, res) => {
+app.get("/games/:id/ads", (req, res) => {
+  const gameId = req.params.id;
+
   return res.json([
     { id: 1, name: "Anuncio1" },
     { id: 2, name: "Anuncio2" },
     { id: 3, name: "Anuncio3" },
   ]);
+});
+
+app.get("/ads/:id/discord", (req, res) => {
+  const adId = req.params.id;
+
+  return res.json([]);
 });
 
 //o listen faz com que o server continue 'ouvindo' e deixando o server aberto
