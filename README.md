@@ -7,3 +7,5 @@ Node.js, SQLite, Prisma, TypeScript
 React.js, TailwindCSS, Vite, TypeScript
 - Utilizando para o Mobile:
 React Native, Expo, React Navigation
+![Imagem 1 do projeto web](https://repository-images.githubusercontent.com/545167606/543a5942-a2f6-4c90-bb17-0c698601d3c4)
+
