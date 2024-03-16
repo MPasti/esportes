@@ -11,6 +11,9 @@
       "resizeMode": "contain",
       "backgroundColor": "#121214"
     },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -25,9 +28,6 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "plugins": [
-      "expo-font"
-    ]
+    }
   }
 }
